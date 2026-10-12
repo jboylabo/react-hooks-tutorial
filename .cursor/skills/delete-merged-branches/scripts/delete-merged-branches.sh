@@ -43,7 +43,7 @@ done < <(git branch --merged "$default_ref" --format='%(refname:short)')
 
 remote_branches=()
 while IFS= read -r branch; do
-  [[ -z "$branch" ]] && continue
+  [[ -z "$branch" || "$branch" != */* ]] && continue
   name="${branch#origin/}"
   if [[ "$name" == "HEAD" || "$branch" == *"HEAD"* ]]; then
     continue
