@@ -16,7 +16,7 @@
 ## Reduxを使う
 
 ```shell
-npm install @reduxjs/toolkit react-redux
+pnpm add @reduxjs/toolkit react-redux
 ```
 
 ### Updateコマンドについて
@@ -36,17 +36,17 @@ npm 標準の機能ではメジャーバージョンの一括更新が難しい�
    2. パッケージのインストール
    package.json が書き換わったら、実際にパッケージをダウンロードして同期します。
    
-   npm install
+   pnpm install
    
    
 ------------------------------
-## 方法2：npm install で個別指定する
-特定のパッケージだけをピンポイントでメジャーアップデートしたい場合は、npm install コマンドで @latest タグを指定するのが一番シンプルです。
+## 方法2：pnpm add で個別指定する
+特定のパッケージだけをピンポイントでメジャーアップデートしたい場合は、pnpm add コマンドで @latest タグを指定するのが一番シンプルです。
 
-npm install <パッケージ名>@latest
+pnpm add <パッケージ名>@latest
 
 
-* 例: npm install axios@latest
+* 例: pnpm add axios@latest
 * これにより、指定したパッケージが既存のバージョン制限（^ や ~）を無視して、強制的に最新のメジャーバージョンに更新され、package.json も上書きされます。
 
 ------------------------------

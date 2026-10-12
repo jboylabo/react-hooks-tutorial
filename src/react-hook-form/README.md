@@ -4,7 +4,7 @@
 
 add package:
 ```shell
-npm install react-hook-form
+pnpm add react-hook-form
 ```
 
 [example]
