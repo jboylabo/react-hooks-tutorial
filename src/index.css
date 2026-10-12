@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
 	font-family: "Avenir Next", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
 	color: #202923;
