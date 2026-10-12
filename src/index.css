@@ -1,0 +1,196 @@
+:root {
+	font-family: "Avenir Next", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+	color: #202923;
+	background: #f3f5f0;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-optical-sizing: auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-width: 320px;
+	min-height: 100vh;
+	margin: 0;
+}
+
+button {
+	font: inherit;
+}
+
+.comparison-page {
+	width: min(100% - 40px, 1040px);
+	margin: 0 auto;
+	padding: 72px 0 80px;
+}
+
+.page-heading {
+	max-width: 700px;
+	margin-bottom: 36px;
+}
+
+.eyebrow,
+.panel-index {
+	color: #597365;
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+}
+
+.page-heading h1 {
+	margin: 14px 0 12px;
+	font-family: Georgia, "Yu Mincho", serif;
+	font-size: clamp(2rem, 5vw, 3.4rem);
+	font-weight: 500;
+	line-height: 1.15;
+}
+
+.page-heading p,
+.panel-header p {
+	color: #617067;
+	line-height: 1.7;
+}
+
+.page-heading p {
+	max-width: 580px;
+	margin: 0;
+}
+
+.comparison-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 18px;
+}
+
+.comparison-panel {
+	min-width: 0;
+	padding: 28px;
+	border: 1px solid #d9dfd7;
+	border-top: 4px solid #df8754;
+	background: #fffefa;
+}
+
+.compiler-panel {
+	border-top-color: #377b67;
+}
+
+.panel-header h2 {
+	margin: 10px 0 4px;
+	font-family: Georgia, "Yu Mincho", serif;
+	font-size: 1.65rem;
+	font-weight: 500;
+}
+
+.panel-header p {
+	min-height: 1.7em;
+	margin: 0;
+	font-size: 0.92rem;
+}
+
+.metric {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	margin: 28px 0 16px;
+	padding-bottom: 14px;
+	border-bottom: 1px solid #e3e7e1;
+	color: #617067;
+	font-size: 0.9rem;
+}
+
+.metric strong {
+	color: #202923;
+	font-family: Georgia, "Yu Mincho", serif;
+	font-size: 2.4rem;
+	font-weight: 500;
+}
+
+.count-button,
+.refresh-button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	min-height: 48px;
+	border: 0;
+	cursor: pointer;
+}
+
+.count-button {
+	padding: 0 16px;
+	background: #263d33;
+	color: white;
+	text-align: left;
+}
+
+.count-button strong {
+	margin-left: auto;
+	font-variant-numeric: tabular-nums;
+}
+
+.count-button span {
+	margin-left: 14px;
+	color: #c6dfcf;
+	font-size: 1.25rem;
+}
+
+.count-button:hover {
+	background: #355747;
+}
+
+.refresh-button {
+	margin-top: 10px;
+	padding: 0 14px;
+	border: 1px solid #d9dfd7;
+	background: transparent;
+	color: #34463c;
+	text-align: left;
+}
+
+.refresh-button:hover {
+	background: #edf1eb;
+}
+
+.refresh-button span {
+	color: #617067;
+	font-variant-numeric: tabular-nums;
+}
+
+.api-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 7px;
+	margin-top: 24px;
+}
+
+.api-list code {
+	padding: 5px 8px;
+	border: 1px solid #e3e7e1;
+	color: #43564a;
+	font-size: 0.76rem;
+}
+
+button:focus-visible {
+	outline: 3px solid #df8754;
+	outline-offset: 3px;
+}
+
+@media (max-width: 680px) {
+	.comparison-page {
+		width: min(100% - 28px, 480px);
+		padding-top: 44px;
+	}
+
+	.comparison-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.comparison-panel {
+		padding: 22px;
+	}
+}
