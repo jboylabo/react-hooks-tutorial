@@ -1,9 +1,9 @@
-import Editor from "./lexical/Editor";
+import Button from "./20260930/button/button";
 
 function App() {
   return (
     <div className="App">
-      <Editor />
+      <Button />
     </div>
   );
 }
